@@ -1,0 +1,23 @@
+{
+  "nick": "bankedits",
+  "accounts": [
+    {
+      "consumer_key": "",
+      "consumer_secret": "",
+      "access_token": "",
+      "access_token_secret": "",
+      "template": "{{{page}}} Wikipedia article edited anonymously from {{{name}}} {{&url}}",
+      "ranges": "ranges.json",
+      "throttle": false,
+      "namespaces": ["article", "file", "media", "main"],
+      "whitelist": {
+        "English Wikipedia": {
+          "Sherrod Brown": false,
+          "Maria Cantwell": false,
+          "Ben Cardin": false,
+          "Tom Carper": false
+        }
+      }
+    }
+  ]
+}
