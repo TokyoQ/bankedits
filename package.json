@@ -1,9 +1,9 @@
 {
-  "name": "anon",
-  "description": "Tweet anonymous edits to Wikipedia from IP ranges.",
-  "homepage": "http://github.com/edsu/anon",
+  "name": "bankedits",
+  "description": "Tweet anonymous edits to Wikipedia from major banks.",
+  "homepage": "http://github.com/TokyoQ/bankedits",
   "license": "CC0-1.0",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "dependencies": {
     "async": "2.6.x",
     "ip-address": "^5.9.0",
