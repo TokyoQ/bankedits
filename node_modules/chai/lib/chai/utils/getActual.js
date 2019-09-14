@@ -5,9 +5,9 @@
  */
 
 /**
- * # getActual(object, [actual])
+ * ### .getActual(object, [actual])
  *
- * Returns the `actual` value for an Assertion
+ * Returns the `actual` value for an Assertion.
  *
  * @param {Object} object (constructed Assertion)
  * @param {Arguments} chai.Assertion.prototype.assert arguments
@@ -15,6 +15,6 @@
  * @name getActual
  */
 
-module.exports = function (obj, args) {
+module.exports = function getActual(obj, args) {
   return args.length > 4 ? args[4] : obj._obj;
 };

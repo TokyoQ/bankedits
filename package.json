@@ -3,22 +3,27 @@
   "description": "Tweet anonymous edits to Wikipedia from IP ranges.",
   "homepage": "http://github.com/edsu/anon",
   "license": "CC0-1.0",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "dependencies": {
-    "async": "0.9.x",
-    "twit": "1.1.x",
-    "wikichanges": ">=0.2.7",
-    "coffee-script": "1.8.x",
-    "minimist": "1.1.x",
-    "mustache": "0.8.x",
-    "ipv6": "3.x.x"
+    "async": "2.6.x",
+    "ip-address": "^5.9.0",
+    "mastodon": "^1.1.1",
+    "minimist": "1.2.x",
+    "mustache": "2.3.0",
+    "phantom": "^4.0.12",
+    "twit": "2.2.x",
+    "wikichanges": ">=0.2.7"
   },
   "devDependencies": {
     "mocha": "latest",
     "chai": "latest"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
-    "test": "mocha --colors --reporter spec --compilers coffee:coffee-script/register test.coffee",
-    "start": "coffee anon.coffee"
+    "test": "mocha --colors --reporter spec test.js",
+    "start": "node anon.js",
+    "mastodon": "node utils/mastodon.js"
   }
 }

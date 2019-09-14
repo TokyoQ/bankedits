@@ -5,7 +5,7 @@
  */
 
 /**
- * ### flag(object, key, [value])
+ * ### .flag(object, key, [value])
  *
  * Get or set a flag value on an object. If a
  * value is provided it will be set, else it will
@@ -23,7 +23,7 @@
  * @api private
  */
 
-module.exports = function (obj, key, value) {
+module.exports = function flag(obj, key, value) {
   var flags = obj.__flags || (obj.__flags = Object.create(null));
   if (arguments.length === 3) {
     flags[key] = value;
