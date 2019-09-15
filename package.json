@@ -7,6 +7,7 @@
   "dependencies": {
     "async": "2.6.x",
     "ip-address": "^5.9.0",
+    "json2yaml": "^1.1.0",
     "mastodon": "^1.1.1",
     "minimist": "1.2.x",
     "mustache": "2.3.0",
