@@ -26,50 +26,50 @@ The ASN used to discover IP ranges are listed in [ranges.yaml](ranges.yaml) as c
 
 ## List of Banks
 
-ANZ Bank
-Alpha Bank
-Amherst Pierpont
-BNP Paribas
-Banco Bradesco
-Banco Santander
-Bank of America
-Bank of China
-Bank of Cyprus
-Bank of Montreal
-Bank of Nova Scotia
-Barclays
-Charles Schwab & Co.
-China Construction Bank
-Citigroup
-Commonwealth Bank of Australia
-Credit Agricole
-Deutsche Bank
-FNB
-First Republic
-Goldman Sachs
-Greenhill
-HSBC
-ICBC
-JP Morgan Chase
-Jefferies
-Lloyds Banking Group
-Macquarie Bank
-Mitsubishi UFJ Financial Group
-Mizuho Financial Group
-Moelis & Co
-Morgan Stanley Group
-National Australia Bank
-Nomura
-Old National
-Open Bank
-PNC Bank
-Rabobank
-Republic Bank
-Reserve Bank of Australia
-Royal Bank of Canada
-Royal Bank of Scotland
-Silicon Valley Bank
-Toronto Dominion Bank
-U.S. Bank
-Wells Fargo
-Westpac Bank
+* ANZ Bank
+* Alpha Bank
+* Amherst Pierpont
+* BNP Paribas
+* Banco Bradesco
+* Banco Santander
+* Bank of America
+* Bank of China
+* Bank of Cyprus
+* Bank of Montreal
+* Bank of Nova Scotia
+* Barclays
+* Charles Schwab & Co.
+* China Construction Bank
+* Citigroup
+* Commonwealth Bank of Australia
+* Credit Agricole
+* Deutsche Bank
+* FNB
+* First Republic
+* Goldman Sachs
+* Greenhill
+* HSBC
+* ICBC
+* JP Morgan Chase
+* Jefferies
+* Lloyds Banking Group
+* Macquarie Bank
+* Mitsubishi UFJ Financial Group
+* Mizuho Financial Group
+* Moelis & Co
+* Morgan Stanley Group
+* National Australia Bank
+* Nomura
+* Old National
+* Open Bank
+* PNC Bank
+* Rabobank
+* Republic Bank
+* Reserve Bank of Australia
+* Royal Bank of Canada
+* Royal Bank of Scotland
+* Silicon Valley Bank
+* Toronto Dominion Bank
+* U.S. Bank
+* Wells Fargo
+* Westpac Bank

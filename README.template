@@ -2,7 +2,7 @@
 
 This little bot will watch Wikipedia for edits from an IP address from one of the world's largest banks and will [tweet](https://twitter.com/bankedits) when it notices one.
 
-Look in [banks.txt](banks.txt) to see the banks under watch (also listed below).
+You can find the list of banks under watch listed below.
 
 Inspired and powered by [anon](https://github.com/edsu/anon).
 
