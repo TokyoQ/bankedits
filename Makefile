@@ -20,7 +20,8 @@ twitconfig:
 
 ## Run bankedits in the container
 bankedits:
-	sudo docker container run -d --mount type=bind,source="$(pwd)"/config/config.json,target=/bankedits/config.json --mount type=bind,source="$(pwd)"/config/ranges.json,target=/bankedits/ranges.json --name bankedits tokyoq/bankedits
+	sudo docker container run -d -v $PWD/config/config.json:/bankedits/config.json -v $PWD/config/ranges.json:/bankedits/ranges.json --name bankedits tokyoq/bankedits
+	#sudo docker container run -d --mount type=bind,source="$(pwd)"/config/config.json,target=/bankedits/config.json --mount type=bind,source="$(pwd)"/config/ranges.json,target=/bankedits/ranges.json --name bankedits tokyoq/bankedits
 
 ## Stop bankedits
 bankedits_stop:

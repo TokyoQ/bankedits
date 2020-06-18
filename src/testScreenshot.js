@@ -52,4 +52,3 @@ function takeScreenshot(url) {
   //const url = 'https://en.wikipedia.org/w/index.php?diff=619968907&oldid=619663144'
   const url = 'https://en.wikipedia.org/w/index.php?diff=961045075&oldid=961043852'
   takeScreenshot(url)
-  
