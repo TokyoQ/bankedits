@@ -11,7 +11,8 @@ const {Address4, Address6} = require('ip-address')
 function takeScreenshot(url) {
     return new Promise(function(resolve, reject) {
       phantom.create(['--ignore-ssl-errors=yes']).then(function(browser) {
-        var filename = new Date().toString() + '.png'
+        //var filename = new Date().toString() + '.png'
+        var filename = 'screenshot.png'
         browser.createPage().then(function(page) {
           page.property('viewportSize', {width: 1024, height: 768}).then(function() {
             page.open(url).then(function(status) {
