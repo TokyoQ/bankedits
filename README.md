@@ -2,9 +2,9 @@
 
 This little bot will watch Wikipedia for edits from an IP address from one of the world's largest banks and will [tweet](https://twitter.com/bankedits) when it notices one.
 
-You can find the list of banks under watch listed below. Raise an issue to request another one, or submit a pull request!
+You can find the list of banks under watch listed below.
 
-Built on top of [anon](https://github.com/edsu/anon).
+Inspired and powered by [anon](https://github.com/edsu/anon).
 
 ## Pull Requests
 
@@ -18,7 +18,7 @@ These will be converted into [ranges.json](ranges.json) once deployed to the bot
 
 ## Media coverage
 
-Bankedits has been mentioned in the [Wall Street Journal](https://www.wsj.com/articles/what-do-bankers-do-online-edit-wikipedia-11557306722).
+Bankedits has been mentioned in the [Wall Street Journal](https://www.wsj.com/articles/what-do-bankers-do-online-edit-wikipedia-11557306722)
 
 ## Finding / Confirming IP Ranges
 
@@ -79,7 +79,6 @@ To run, you need to mount the config.json and ranges.json files
 * Royal Bank of Canada
 * Royal Bank of Scotland
 * Silicon Valley Bank
-* Test
 * Toronto Dominion Bank
 * U.S. Bank
 * Wells Fargo
