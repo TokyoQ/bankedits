@@ -1,12 +1,13 @@
-FROM node:boron
+FROM ubuntu:latest
 
-COPY . /opt/anon
-WORKDIR /opt/anon
+COPY src /bankedits
+WORKDIR /bankedits
 
 RUN  apt-get update \
- && apt-get install --yes build-essential libicu-dev \
- && npm install \
- && ln -s /opt/anon/anon.js /usr/bin/anon
+ && apt-get install --yes curl libfontconfig \
+ && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+ && apt-get install -y nodejs
 
-CMD ["anon"]
+RUN npm install
 
+CMD node anon.js
