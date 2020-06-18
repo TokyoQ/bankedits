@@ -2,18 +2,26 @@
 # default target
 #
 
-help:           ## Show this help.
+## Show this help
+help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep  | sed -e 's/:[^#]*##/ -- /' | sed 's/^##/\n##/'
 
-readme: ## Generate README.md from the template
+## Generate README.md from the template
+readme:
 	utils/generate_readme.sh
 
-siem_phase1_spikes: ## create siem_phase1_spikes docx|pdf from the siem_phase1_spikes directory
-	cd siem_phase1_spikes && \
-	rm -f .\~lock.*\# && \
-	documentorx.py \
-		--metadata    doc.yaml \
-		--doc         ../preamble.docx \
-		--pandoc-glob './*/*.md' \
-		--output      '../output/siem_phase1_spikes.{Revision_SHA}.docx' \
-		--output      '../output/siem_phase1_spikes.{Revision_SHA}.pdf'
+## Create docker image from Dockerfile
+image:
+	sudo docker image build -t tokyoq/bankedits:latest .
+
+## Create config.json file from template
+twitconfig: 
+	utils/generate_config.sh
+
+## Run bankedits in the container
+bankedits:
+	sudo docker container run -d --mount type=bind,source="$(pwd)"/config/config.json,target=/bankedits/config.json --mount type=bind,source="$(pwd)"/config/ranges.json,target=/bankedits/ranges.json --name bankedits tokyoq/bankedits
+
+## Stop bankedits
+bankedits_stop:
+	sudo docker container stop bankedits

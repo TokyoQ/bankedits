@@ -1,5 +1,4 @@
 #!/bin/bash
-cd ..
 
 jq 'keys[]' config/ranges.json | tr -d '"' > banks.txt
 sed -i '' -e 's/^/* /g' banks.txt

@@ -2,9 +2,9 @@
 
 This little bot will watch Wikipedia for edits from an IP address from one of the world's largest banks and will [tweet](https://twitter.com/bankedits) when it notices one.
 
-You can find the list of banks under watch listed below.
+You can find the list of banks under watch listed below. Raise an issue to request another one, or submit a pull request!
 
-Inspired and powered by [anon](https://github.com/edsu/anon).
+Built on top of [anon](https://github.com/edsu/anon).
 
 ## Pull Requests
 
@@ -16,6 +16,10 @@ Feel free to raise a pull request to add additional banks. Use the below format 
 
 These will be converted into [ranges.json](ranges.json) once deployed to the bot.
 
+## Media coverage
+
+Bankedits has been mentioned in the [Wall Street Journal](https://www.wsj.com/articles/what-do-bankers-do-online-edit-wikipedia-11557306722).
+
 ## Finding / Confirming IP Ranges
 
 You can search for banks to find their ASNs and IP ranges using [this tool from Hurricane Electric](https://bgp.he.net/).
@@ -23,6 +27,12 @@ You can search for banks to find their ASNs and IP ranges using [this tool from 
 You can also cross reference with this [ASN Lookup Tool](https://www.ultratools.com/tools/asnInfoResult). 
 
 The ASN used to discover IP ranges are listed in [ranges.yaml](ranges.yaml) as comments. 
+
+## Deploying bankedits
+
+Bankedits now runs from of a Docker image(https://hub.docker.com/repository/docker/tokyoq/bankedits).
+
+To run, you need to mount the config.json and ranges.json files
 
 ## List of Banks
 
@@ -69,6 +79,7 @@ The ASN used to discover IP ranges are listed in [ranges.yaml](ranges.yaml) as c
 * Royal Bank of Canada
 * Royal Bank of Scotland
 * Silicon Valley Bank
+* Test
 * Toronto Dominion Bank
 * U.S. Bank
 * Wells Fargo
